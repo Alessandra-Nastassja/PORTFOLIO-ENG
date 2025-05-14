@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
-h2, h3, h4, h5  { 
+h2, h3, h4, h5, h6 { 
     text-transform: uppercase; 
     font-size: 35px;
 }
@@ -47,12 +47,16 @@ main.content-resume {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-flow: row wrap;
     gap: 1rem;
 }
 
 section.content-resume--education-language {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
+    align-items: flex-start !important;
 }
 
 article.content-education {
@@ -71,18 +75,39 @@ article.content-language {
     }
 }
 
-article.content-expirience {
+article.content-experience {
     background-color: #8178B4;
+    padding-bottom: 1px;
 }
 
-article.content-language, article.content-expirience {
+article.content-contact {
+    background-color: #C38DAE;
+
+    div { 
+        display: flex;
+        flex-direction: column;
+        margin: 0 25px; 
+    }
+
+    p { 
+        margin-top: 0px;
+        font-weight: 100; 
+    }
+}
+
+article.content-language, 
+article.content-experience,
+article.content-contact {
     color: #FFFFFF;
     border-radius: 25px;
     text-align: left;
 }
 
-article.content-education, article.content-language, article.content-expirience {
-    h3, h4, h5 { 
+article.content-education, 
+article.content-language, 
+article.content-experience, 
+article.content-contact {
+    h3, h4, h5, h6 { 
         margin: 5px;
         padding: 0 25px;
     }

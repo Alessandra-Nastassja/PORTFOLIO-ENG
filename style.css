@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+
+h2, h3, h4, h5  { 
+    text-transform: uppercase; 
+    font-size: 35px;
+}
+
+header {
+    background-color: #9680B1;
+    color: #ffffff;
+}
+
+body {
+    text-align: center;
+    font-family: "Changa", sans-serif;
+    background-color: #FBF8EF;
+}
+
+section.content-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    p { font-weight: 100; }
+
+    p, b { 
+        color: #9680B1; 
+        font-size: 20px;
+    }
+}
+
+article.content-header--title {
+    width: 100%;
+    padding: 10px;
+}
+
+article.content-header--resume {
+    background-color: #D297B5;
+    border-radius: 25px;
+    padding: 15px 25px;
+    text-align: left;
+
+    p, h2 { color: #FFFFFF; }
+}
+
+main.content-resume {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+section.content-resume--education-language {
+    display: flex;
+    gap: 1rem;
+}
+
+article.content-education {
+    border: 20px solid #A981B3;
+    border-radius: 25px;
+    color: #A981B3;
+    text-align: left;
+}
+
+article.content-language {
+    background-color: #E8A8BC;
+    height: 100%;
+
+    h4 {
+        margin-right: 25px;
+    }
+}
+
+article.content-expirience {
+    background-color: #8178B4;
+}
+
+article.content-language, article.content-expirience {
+    color: #FFFFFF;
+    border-radius: 25px;
+    text-align: left;
+}
+
+article.content-education, article.content-language, article.content-expirience {
+    h3, h4, h5 { 
+        margin: 5px;
+        padding: 0 25px;
+    }
+
+    ul { 
+        padding-right: 25px; 
+
+        li > p {
+            font-weight: 600;
+            margin: 0px;
+        }
+
+        li > small {
+            font-weight: 100;
+        }
+    }
+}

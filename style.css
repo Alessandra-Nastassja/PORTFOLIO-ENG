@@ -30,11 +30,16 @@ header {
 
 section.content-header {
     display: flex;
-    justify-self: center;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-    width: 100%;
-    justify-content: space-around;
+    gap: 5rem;
+
+    b { font-size: 24px; }
+    p { 
+        font-weight: 100; 
+        font-size: 18px;
+    }
 }
 
 article.content-header--title {
@@ -42,7 +47,7 @@ article.content-header--title {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin-right: 50px;
+    color: #9680B1;
 
     p { margin: 0px; }
 }
@@ -52,7 +57,7 @@ article.content-header--resume {
     border-radius: 25px;
     padding: 15px 25px;
     text-align: left;
-    width: 50%;
+    max-width: 550px;
 
     p, h2 { color: #FFFFFF; }
 }
@@ -62,6 +67,8 @@ section.content-resume {
     justify-content: center;
     flex-direction: row;
     gap: 5px;
+
+    article { max-width: 350px; }
 }
 
 section.content-resume {
@@ -88,6 +95,7 @@ article.content-language {
     background-color: #E8A8BC;
     height: 100%;
     padding-bottom: 1px;
+    height: 230px;
 
     h4 {
         margin-right: 25px;
@@ -102,10 +110,15 @@ article.content-experience {
 article.content-contact {
     background-color: #C38DAE;
 
-    div { 
+    div { margin: 0 25px; }
+    i { font-size: 40px; }
+
+    div.content-contact--info { 
         display: flex;
-        flex-direction: column;
-        margin: 0 25px; 
+        flex-direction: row;
+        align-items: center;
+        line-height: 15px;
+        margin: 15px;
     }
 
     p { 
@@ -139,7 +152,7 @@ div.content-software--box {
 section.content-imagem {
     background-color: #9680AF;
     border-radius: 25px;
-    width: 30%;
+    width: 15%;
 }
 
 article.content-language, 

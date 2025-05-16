@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
+:root {
+    --branco: #FFFFFF;
+    --bege: #FBF8EF;
+    --lilas: #9680B1;
+    --bordo: #A981B3;
+    --roxo: #8178B4;
+    --roxo-bebe: #ABA0D1;
+    --roxo-escuro: #9680AF;
+    --rose: #D297B5;
+    --rosa: #C38DAE;
+    --rosa-bebe: #E8A8BC;
+}
+
 h2, h3, h4, h5, h6 { 
     text-transform: uppercase; 
     font-size: 35px;
@@ -8,7 +21,7 @@ h2, h3, h4, h5, h6 {
 body {
     text-align: center;
     font-family: "Changa", sans-serif;
-    background-color: #FBF8EF;
+    background-color: var(--bege);
 }
 
 header {
@@ -20,8 +33,8 @@ header {
     menu {
         display: flex;
         justify-content: center;
-        background-color: #9680B1;
-        color: #ffffff;
+        background-color: var(--lilas);
+        color: var(--branco);
         margin-bottom: 5px;
 
         h1 { margin-bottom: 0.5rem; }
@@ -47,19 +60,19 @@ article.content-header--title {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    color: #9680B1;
+    color: var(--lilas);
 
     p { margin: 0px; }
 }
 
 article.content-header--resume {
-    background-color: #D297B5;
+    background-color: var(--rose);
     border-radius: 25px;
     padding: 15px 25px;
     text-align: left;
     max-width: 550px;
 
-    p, h2 { color: #FFFFFF; }
+    p, h2 { color: var(--branco); }
 }
 
 section.content-resume {
@@ -85,14 +98,14 @@ section.content-resume {
 }
 
 article.content-education {
-    border: 20px solid #A981B3;
+    border: 20px solid var(--bordo);
     border-radius: 25px;
-    color: #A981B3;
+    color: var(--bordo);
     text-align: left;
 }
 
 article.content-language {
-    background-color: #E8A8BC;
+    background-color: var(--rosa-bebe);
     height: 100%;
     padding-bottom: 1px;
     height: 230px;
@@ -103,12 +116,12 @@ article.content-language {
 }
 
 article.content-experience {
-    background-color: #8178B4;
+    background-color: var(--roxo);
     padding-bottom: 1px;
 }
 
 article.content-contact {
-    background-color: #C38DAE;
+    background-color: var(--rosa);
 
     div { margin: 0 25px; }
     i { font-size: 40px; }
@@ -128,7 +141,7 @@ article.content-contact {
 }
 
 article.content-software {
-    background-color: #ABA0D1;
+    background-color: var(--roxo-bebe);
     padding-bottom: 15px;
 }
 
@@ -150,7 +163,7 @@ div.content-software--box {
 }
 
 section.content-imagem {
-    background-color: #9680AF;
+    background-color: var(--roxo-escuro);
     border-radius: 25px;
     width: 15%;
 }
